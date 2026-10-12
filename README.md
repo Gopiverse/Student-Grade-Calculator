@@ -1,16 +1,59 @@
-# React + Vite
+# Student Grade Calculator
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A simple and user-friendly Student Grade Calculator built using ReactJS and CSS.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Enter student name and marks for five subjects.
+- Calculate total marks and percentage.
+- Automatically assign a grade based on percentage.
+- Display Pass or Fail status based on individual subject marks.
+- Validate empty fields and invalid marks.
+- Reset the form to calculate another result.
 
-## React Compiler
+## Technologies Used
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- ReactJS
+- JavaScript
+- CSS
+- Vite
 
-## Expanding the Oxlint configuration
+## How to Run Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+1. Clone this repository.
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+4. Open the local URL shown in the terminal.
+
+## Grade Criteria
+
+| Percentage | Grade |
+|---|---|
+| 90 and above | A+ |
+| 80–89.99 | A |
+| 70–79.99 | B |
+| 60–69.99 | C |
+| 50–59.99 | D |
+| Below 50 | F |
+
+**Pass criteria:** A minimum of 35 marks in every subject.
+
+## Build for Production
+
+```bash
+npm run build
+```
+
+## Project Purpose
+
+This project was created to practise React fundamentals, state management, event handling, conditional rendering, and input validation.
